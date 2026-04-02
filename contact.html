@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Contact Me</h1>
         <nav>
-             <ul>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>     
+            </ul>
         </nav>
     </header>
-    
+
     <main>
         <section>
             <h2>Get In Touch</h2>
-        
+
             <form action="#" method="post">
                 <!-- Name field-->
                 <label for="name">Full Name</label>
@@ -31,7 +33,7 @@
                 <!--Email-->
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required placeholder="you@example.com">
-             <!-- Missing: labels, more input types, validation -->
+                <!-- Missing: labels, more input types, validation -->
 
                 <!--phone-->
                 <label for="phone">Phone Number</label>
@@ -51,22 +53,24 @@
                 <div class="radio-group">
                     <input type="radio" id="contact_email" name="contact_method" value="email" checked>
                     <label for="contact_email">Email</label>
-                    
+
                     <input type="radio" id="contact_phone" name="contact_method" value="phone">
                     <label for="contact_phone">Phone</label>
                 </div>
 
                 <!--Message Textarea-->
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Your message here..."></textarea>
-            
+                <textarea id="message" name="message" rows="5" required minlength="10"
+                    placeholder="Your message here..."></textarea>
+
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
-    
+
     <footer>
         <p>Contact me at <a href="mailto:rembuluwanim.ys@gmail.com">rembuluwanim.ys.@gmail.com</a></p>
     </footer>
 </body>
+
 </html>
