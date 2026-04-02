@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Me | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,22 +19,54 @@
         </nav>
     </header>
     
-    <div>
-        <h2>Get In Touch</h2>
+    <main>
+        <section>
+            <h2>Get In Touch</h2>
         
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
+            <form action="#" method="post">
+                <!-- Name field-->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required minlength="2" placeholder="Name">
+
+                <!--Email-->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+             <!-- Missing: labels, more input types, validation -->
+
+                <!--phone-->
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="12345677890">
+
+                <!--Subject-->
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="hire">Hire me</option>
+                    <option value="project">Project inquiry</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <!--Radio buttons-->
+                <span>Preferred contact method:</span>
+                <div class="radio-group">
+                    <input type="radio" id="contact_email" name="contact_method" value="email" checked>
+                    <label for="contact_email">Email</label>
+                    
+                    <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                    <label for="contact_phone">Phone</label>
+                </div>
+
+                <!--Message Textarea-->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Your message here..."></textarea>
             
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
-        </form>
-    </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
     
-    <div class="footer">
+    <footer>
         <p>Contact me at email@example.com</p>
-    </div>
+    </footer>
 </body>
 </html>
