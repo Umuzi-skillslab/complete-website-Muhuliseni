@@ -1,0 +1,39 @@
+Issues identified in starter code (15+ errors):
+
+HTML (10 errors):
+
+Missing main tags on about, contact, index pages
+
+Missing viewport meta tag on about.html
+
+Contact form had no labels
+
+Contact form only had 3 input types (needs 5+)
+
+No HTML5 validation attributes on form
+
+Footer email links missing mailto:
+
+Redundant paragraph after table in about.html
+
+Missing navigation in index.html (fixed)
+
+div with class header/footer instead of semantic tags
+
+Third project missing in projects.html
+
+CSS (11 errors):
+11. Navigation styling missing entirely
+12. Table had no borders or alternating rows
+13. Form styling incomplete
+14. Colour contrast issue (light blue background)
+15. Only 2 selector types used
+16. No pseudo-classes (:hover, :focus)
+17. Footer left-aligned instead of centered
+18. Missing box model properties
+19. No CSS comments
+20. Inconsistent indentation
+21. .header and .footer classes referenced but not used
+
+Fixes applied:
+Replaced <div> with semantic tags, added complete navigation, built 5+ input type form with labels and validation, styled table with borders and alternating rows, added hover effects, fixed contrast, centered footer, added 5+ selector types including pseudo-classes, wrote 10+ CSS comments, and validated all pages.

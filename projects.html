@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
+    <header>
         <h1>My Projects</h1>
-    </div>
-    
-    <div>
-        <h2>Project 1</h2>
-        <img src="images/project1.jpg">
-        <p>A responsive website built with HTML and CSS.</p>
-    </div>
-    
-    <div>
-        <h2>Project 2</h2>
-        <img src="images/project2.jpg">
-        <p>An e-commerce site with modern design.</p>
-    </div>
-    
-    <!-- Third project missing -->
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/Project-1.png"
+                    alt="Screenshot of Project 1: A responsive website built with HTML and CSS.">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML and CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="images/Project-2.png" alt="A basic html website with introduction to css.">
+                <h3>Project 2</h3>
+                <p>A basic html website with an intro to css.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="images/Project-3.png"
+                    alt="Screenshot of Project 3: A basic website without styling that introduced me to JavaScript.">
+                <h3>Project 3</h3>
+                <p>A basic web application using JavaScript.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Contact me at <a href="mailto:rembuluwanim.ys@gmail.com">rembuluwanim.ys.@gmail.com</a></p>
+    </footer>
 </body>
+
 </html>

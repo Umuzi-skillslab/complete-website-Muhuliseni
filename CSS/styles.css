@@ -1,0 +1,297 @@
+/* ========== RESET & BASE STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+    background-color: #222;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styling - descendant selector */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Pseudo-class :hover and :focus */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Hero section - class selector */
+.hero {
+    background-color: #e0f0ff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* ========== IMAGES ========== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* ========== TABLE STYLING ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    /* border property 1 */
+    border: 1px solid #ddd;
+}
+
+th, td {
+    /* border property 2 */
+    border: 1px solid #ddd;
+    padding: 12px;  /* padding example 1 */
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+/* Alternating row colors - pseudo-class :nth-child */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0f0ff;
+}
+
+/* ========== FORM STYLING ========== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;  /* padding example 2 */
+    border: 1px solid #ccc;  /* border property 3 */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255,102,0,0.5);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px;  /* padding example 3 */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc5500;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;  /* fixed alignment */
+    padding: 1.5rem;  /* margin examples below */
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffaa66;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+}
+/* About page - image on the right */
+.about-section {
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 250px;  /* Controls image size */
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* On mobile, stack vertically */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Projects grid - 3 columns side by side */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    color: #222;
+}
+
+.project-card p {
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive: 2 columns on tablets, 1 column on phones */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
