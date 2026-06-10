@@ -4,50 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <meta name="description"
+        content="Explore my web development projects built using HTML, CSS, and JavaScript.">
+    <title>Projects | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
     <header>
         <h1>My Projects</h1>
-        <nav>
+
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="images/Project-1.png"
-                    alt="Screenshot of Project 1: A responsive website built with HTML and CSS.">
-                <h3>Project 1</h3>
-                <p>A responsive website built with HTML and CSS.</p>
-            </div>
+    <main id="main-content">
 
-            <div class="project-card">
-                <img src="images/Project-2.png" alt="A basic html website with introduction to css.">
-                <h3>Project 2</h3>
-                <p>A basic html website with an intro to css.</p>
-            </div>
+        <section>
+            <h2>Featured Projects</h2>
 
-            <div class="project-card">
-                <img src="images/Project-3.png"
-                    alt="Screenshot of Project 3: A basic website without styling that introduced me to JavaScript.">
-                <h3>Project 3</h3>
-                <p>A basic web application using JavaScript.</p>
-            </div>
-        </div>
+            <p>
+                These projects showcase my growing skills in web development,
+                responsive design, and front-end technologies.
+            </p>
+
+            <section class="projects-grid">
+
+                <article class="project-card">
+
+                    <figure>
+                        <img src="images/Project-1.png"
+                            alt="Screenshot of Project 1 showing a responsive website built with HTML and CSS.">
+
+                        <figcaption>
+                            Responsive website built using HTML and CSS.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Project 1</h3>
+
+                    <p>
+                        A responsive website designed using semantic HTML and
+                        modern CSS techniques to create a user-friendly layout.
+                    </p>
+
+                </article>
+
+                <article class="project-card">
+
+                    <figure>
+                        <img src="images/Project-2.png"
+                            alt="Screenshot of Project 2 showing a beginner HTML and CSS website.">
+
+                        <figcaption>
+                            Introductory website demonstrating HTML and CSS fundamentals.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Project 2</h3>
+
+                    <p>
+                        A beginner-friendly project that introduced styling,
+                        page structure, and web design principles.
+                    </p>
+
+                </article>
+
+                <article class="project-card">
+
+                    <figure>
+                        <img src="images/Project-3.png"
+                            alt="Screenshot of Project 3 showing a web application built using JavaScript.">
+
+                        <figcaption>
+                            Interactive web application using JavaScript.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Project 3</h3>
+
+                    <p>
+                        A simple web application that introduced JavaScript
+                        functionality and interactive user experiences.
+                    </p>
+
+                </article>
+
+            </section>
+
+        </section>
+
     </main>
+
     <footer>
-        <p>Contact me at <a href="mailto:rembuluwanim.ys@gmail.com">rembuluwanim.ys.@gmail.com</a></p>
+        <p>
+            Contact me at
+            <a href="mailto:rembuluwanim.ys@gmail.com">
+                rembuluwanim.ys@gmail.com
+            </a>
+        </p>
     </footer>
+
 </body>
 
 </html>
