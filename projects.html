@@ -1,30 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore my web development projects built using HTML, CSS, and JavaScript.">
+    <title>Projects | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header>
         <h1>My Projects</h1>
-    </div>
-    
-    <div>
-        <h2>Project 1</h2>
-        <img src="images/project1.jpg">
-        <p>A responsive website built with HTML and CSS.</p>
-    </div>
-    
-    <div>
-        <h2>Project 2</h2>
-        <img src="images/project2.jpg">
-        <p>An e-commerce site with modern design.</p>
-    </div>
-    
-    <!-- Third project missing -->
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section>
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                These projects showcase my growing skills in web development,
+                responsive design, and front-end technologies.
+            </p>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <figure>
+                        <img src="images/Project-1.png"
+                            alt="Screenshot of Project 1 showing a responsive website built with HTML and CSS.">
+
+                        <figcaption>
+                            Responsive website built using HTML and CSS.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Project 1</h3>
+
+                    <p>
+                        A responsive website designed using semantic HTML and
+                        modern CSS techniques to create a user-friendly layout.
+                    </p>
+
+                </article>
+
+                <article class="project-card">
+
+                    <figure>
+                        <img src="images/Project-2.png"
+                            alt="Screenshot of Project 2 showing a beginner HTML and CSS website.">
+
+                        <figcaption>
+                            Introductory website demonstrating HTML and CSS fundamentals.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Project 2</h3>
+
+                    <p>
+                        A beginner-friendly project that introduced styling,
+                        page structure, and web design principles.
+                    </p>
+
+                </article>
+
+                <article class="project-card">
+
+                    <figure>
+                        <img src="images/Project-3.png"
+                            alt="Screenshot of Project 3 showing a web application built using JavaScript.">
+
+                        <figcaption>
+                            Interactive web application using JavaScript.
+                        </figcaption>
+                    </figure>
+
+                    <h3>Project 3</h3>
+
+                    <p>
+                        A simple web application that introduced JavaScript
+                        functionality and interactive user experiences.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Contact me at
+            <a href="mailto:rembuluwanim.ys@gmail.com">
+                rembuluwanim.ys@gmail.com
+            </a>
+        </p>
+    </footer>
+
 </body>
+
 </html>
