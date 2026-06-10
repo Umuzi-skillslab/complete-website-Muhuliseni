@@ -1,116 +1,314 @@
 # Personal Portfolio Website
 
 ## Overview
-This is a fully responsive, multi-page portfolio website built with semantic HTML5 and modern CSS. The site showcases my web development skills, projects, and provides a contact form with validation. The design follows accessibility standards and professional UI patterns.
 
-## Issues Found in Starter Code
-I identified **18 major errors** across the 5 starter files:
-
-### HTML Errors (12)
-1. Missing `<!DOCTYPE html>` declaration
-2. No viewport meta tag for responsiveness
-3. Missing semantic `<main>` wrapper on all pages
-4. Navigation menu absent from index.html
-5. Contact form had no `<label>` elements (accessibility fail)
-6. Only 3 input types in form – needed 5+
-7. No HTML5 validation attributes (`required`, `pattern`, etc.)
-8. Footer email links missing `mailto:` protocol
-9. Redundant paragraph after table in about.html
-10. Third project missing from projects.html
-11. Missing `alt` attributes on several images
-12. Improper use of `<div>` instead of `<header>`/`<footer>`
-
-### CSS Errors (6)
-13. Navigation styling completely missing
-14. Table had no borders, spacing, or alternating rows
-15. Form styling incomplete (no visual hierarchy)
-16. Colour contrast failure (light blue text on light background)
-17. Only 2 selector types used – needed 5+
-18. Footer left-aligned instead of centered
-
-## Fixes Implemented
-- Replaced all `<div>` containers with semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
-- Added consistent navigation menu across all 4 pages with hover effects
-- Created a complete contact form with 6 input types: text, email, tel, select, radio, textarea
-- Added labels and HTML5 validation (`required`, `minlength`, `pattern`)
-- Built a skills table with `<thead>`, `<tbody>`, and alternating row colors
-- Fixed colour contrast to meet WCAG 4.5:1 ratio
-- Expanded CSS to 6 selector types: element, class, ID, descendant, pseudo-class, attribute
-- Added `:hover`, `:focus`, and `:nth-child` pseudo-classes
-- Centered footer and added proper box model properties (margin, padding, border)
-
-## HTML Structure & Semantic Choices
-- **`<header>`**: Contains site title and navigation
-- **`<nav>`**: Wraps all internal page links
-- **`<main>`**: Unique content for each page (helps screen readers)
-- **`<section>`**: Groups related content (hero, projects, form)
-- **`<footer>`**: Copyright and contact information
-- **`<table>`**: Skills data with semantic headers
-- **`<form>`**: Contact functionality with proper fieldset/labels
-
-I used **zero unnecessary `<div>` tags** – only where styling required a generic container.
-
-## CSS Styling Approach
-**Selector types used (6):**
-- Element (`body`, `h1`, `p`)
-- Class (`.hero`, `.radio-group`)
-- ID (`#name`, `#email` – for form labels)
-- Descendant (`nav ul li a`)
-- Pseudo-class (`:hover`, `:focus`, `:nth-child`)
-- Attribute (`input[type="text"]`)
-
-**Key features:**
-- Flexbox for navigation and card layouts
-- CSS Grid for projects page (auto-fit responsive)
-- Smooth transitions on hover
-- Alternating table rows for readability
-- Focus states for form accessibility
-
-## Accessibility Improvements
-- All images have descriptive `alt` text
-- Form inputs have associated `<label>` elements
-- Sufficient colour contrast (verified with WebAIM Contrast Checker)
-- Logical heading hierarchy (h1 → h2 → h3)
-- Focus indicators on interactive elements
-- Semantic HTML for screen reader compatibility
-
-## How to View Locally
-1. **Download or clone** this repository
-2. **Open the folder** in your code editor (VS Code recommended)
-3. **Launch a local server**:
-   - *Option A (Live Server)*: Right-click `index.html` → "Open with Live Server"
-   - *Option B (Manual)*: Double-click `index.html` to open in browser
-4. **Navigate** using the menu to test all 4 pages
-5. **Verify form validation** by trying to submit empty fields
-
-## Screenshots
-All screenshots are located in the `/screenshots` folder:
-
-| Page/Section | Filename | Description |
-|--------------|----------|-------------|
-| Homepage | `homepage.png` | Hero section and featured projects |
-| About page | `about.png` | Skills table and profile image |
-| Projects page | `projects.png` | 3-column project grid |
-| Contact page | `contact.png` | Complete form with validation |
-| Navigation hover | `nav-hover.png` | Hover effect on menu links |
-| Before/After | `before-after.png` | Comparison of old vs new design |
-
-## Reflection
-The biggest challenge was **debugging the starter code without a clear error list**. I solved this by:
-1. Running each HTML file through the W3C validator
-2. Checking the CSS against the rubric line by line
-3. Testing in multiple browsers (Chrome, Firefox, Edge)
-
-I learned that **semantic HTML is not just for accessibility** – it makes CSS styling more predictable and reduces the need for extra `<div>` wrappers. The most satisfying fix was transforming the broken contact form into a fully validated, user-friendly component with real-time HTML5 validation.
-
-## Technologies Used
-- HTML5 (semantic)
-- CSS3 (Flexbox, Grid, transitions)
-- W3C Validators
-- Figma (wireframing)
-
-## Credits
-- Placeholder images from Unsplash
-- Assignment by Umuzi Creative Agency
+This is a fully responsive, multi-page portfolio website built using semantic HTML5 and modern CSS3. The website showcases my background, technical skills, projects, and contact information through a clean and accessible user interface. The site follows responsive design principles, accessibility best practices, and semantic HTML standards.
 
 ---
+
+## Issues Found in Starter Code
+
+I identified and resolved multiple issues across the provided starter files.
+
+### HTML Issues
+
+* Missing `<!DOCTYPE html>` declaration
+* Missing viewport meta tag for responsive design
+* Missing semantic `<main>` elements
+* Inconsistent navigation structure
+* Missing form labels
+* Insufficient form input variety
+* Missing HTML5 validation attributes
+* Missing accessibility enhancements
+* Missing alt text on images
+* Missing semantic structure on several pages
+* Missing table structure and semantic headers
+* Footer email links incorrectly formatted
+
+### CSS Issues
+
+* Navigation styling missing
+* Form styling incomplete
+* Table styling missing
+* Inconsistent spacing and layout
+* Insufficient selector variety
+* Weak visual hierarchy
+* Missing responsive layout improvements
+* Footer alignment issues
+
+---
+
+## Fixes Implemented
+
+### Semantic HTML Improvements
+
+* Added semantic HTML5 elements including:
+
+  * `<header>`
+  * `<nav>`
+  * `<main>`
+  * `<section>`
+  * `<article>`
+  * `<figure>`
+  * `<figcaption>`
+  * `<footer>`
+
+* Added meta description tags to all pages
+
+* Added skip-to-content links for accessibility
+
+* Added active navigation indicators
+
+* Added table captions and scope attributes
+
+* Improved heading hierarchy throughout the website
+
+### Navigation Improvements
+
+* Consistent navigation menu across all pages
+* Active page highlighting
+* Hover and focus states for navigation links
+* Accessibility-friendly navigation structure
+
+### Images & Media
+
+* Added descriptive alt text to all images
+* Wrapped key images inside `<figure>` elements
+* Added meaningful `<figcaption>` descriptions
+* Improved semantic image presentation
+
+### Table Improvements
+
+* Added semantic table structure using:
+
+  * `<caption>`
+  * `<thead>`
+  * `<tbody>`
+  * `scope="col"`
+  * `scope="row"`
+
+* Improved table readability with alternating row colours and hover effects
+
+### Form Improvements
+
+* Added six form input types:
+
+  * Text
+  * Email
+  * Telephone
+  * Select menu
+  * Radio buttons
+  * Textarea
+
+* Added HTML5 validation attributes:
+
+  * `required`
+  * `minlength`
+  * `pattern`
+
+* Added autocomplete attributes
+
+* Grouped radio buttons using `<fieldset>` and `<legend>`
+
+* Added helper text and improved accessibility
+
+### CSS Improvements
+
+Implemented multiple selector types:
+
+1. Element selectors
+2. Class selectors
+3. ID selectors
+4. Descendant selectors
+5. Pseudo-class selectors
+6. Attribute selectors
+
+Additional improvements include:
+
+* Responsive Flexbox layouts
+* CSS Grid project gallery
+* Hover and focus effects
+* Form validation styling
+* Improved spacing and visual consistency
+* Responsive mobile layouts
+
+---
+
+## HTML Structure & Semantic Choices
+
+### Header
+
+Contains the site title and primary navigation.
+
+### Navigation
+
+Provides consistent navigation between all pages.
+
+### Main
+
+Contains the unique content for each page and improves screen reader navigation.
+
+### Sections
+
+Used to group related content such as:
+
+* Hero section
+* Background information
+* Skills section
+* Projects section
+* Contact form
+
+### Articles
+
+Used to represent individual project content and grouped information.
+
+### Figure & Figcaption
+
+Used for images that require contextual descriptions.
+
+### Table
+
+Used to present technical skills and experience levels in a structured format.
+
+### Form
+
+Used to collect contact information with proper validation and accessibility support.
+
+---
+
+## CSS Styling Approach
+
+### Layout Techniques
+
+* Flexbox for navigation and content alignment
+* CSS Grid for project cards
+* Responsive media queries
+* Consistent spacing and alignment
+
+### Interactive Features
+
+* Hover effects
+* Focus states
+* Active navigation indicators
+* Form validation feedback
+
+### Design Principles
+
+* Clear visual hierarchy
+* Consistent spacing
+* Professional colour palette
+* Accessible typography
+* Mobile-first responsiveness
+
+---
+
+## Accessibility Improvements
+
+The website was designed with accessibility in mind.
+
+### Accessibility Features
+
+* Skip-to-content links
+* Semantic HTML structure
+* Descriptive image alt text
+* Figure captions
+* Form labels for all inputs
+* Fieldset and legend grouping
+* Keyboard-accessible navigation
+* Visible focus states
+* Proper heading hierarchy
+* Table captions and scope attributes
+* WCAG-compliant colour contrast
+
+---
+
+## Responsive Design
+
+The website adapts to different screen sizes using media queries.
+
+### Desktop
+
+* Three-column project grid
+* Horizontal navigation menu
+
+### Tablet
+
+* Two-column project grid
+* Optimized spacing and layout
+
+### Mobile
+
+* Single-column project grid
+* Stacked navigation menu
+* Mobile-friendly spacing
+
+---
+
+## How to View Locally
+
+1. Download or clone the repository.
+2. Open the project folder in Visual Studio Code.
+3. Launch a local server:
+
+### Option A – Live Server
+
+Right-click `index.html` and select **Open with Live Server**.
+
+### Option B – Browser
+
+Double-click `index.html` to open the project in your browser.
+
+4. Navigate through all four pages.
+5. Test responsiveness using browser developer tools.
+6. Test form validation by submitting empty or invalid inputs.
+
+---
+
+## Screenshots
+
+All screenshots are stored in the `/screenshots` folder.
+
+| Page/Section    | Filename       | Description                             |
+| --------------- | -------------- | --------------------------------------- |
+| Homepage        | homepage.png   | Homepage hero section                   |
+| About Page      | about.png      | Background information and skills table |
+| Projects Page   | projects.png   | Responsive projects grid                |
+| Contact Page    | contact.png    | Contact form                            |
+| Navigation      | navigation.png | Navigation menu and active state        |
+| Responsive View | responsive.png | Mobile layout demonstration             |
+
+---
+
+## Reflection
+
+One of the biggest challenges was identifying and correcting issues across multiple HTML and CSS files while ensuring that the final website remained consistent, accessible, and responsive.
+
+Through this project I strengthened my understanding of:
+
+* Semantic HTML5
+* Accessibility best practices
+* Responsive web design
+* CSS Grid and Flexbox
+* Form validation
+* Code organization and maintainability
+
+The most valuable lesson was learning how semantic HTML improves both accessibility and maintainability while reducing the need for unnecessary containers and styling workarounds.
+
+---
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* Flexbox
+* CSS Grid
+* W3C HTML Validator
+* W3C CSS Validator
+* Figma (Wireframing)
+
+---
+
+## Credits
+
+* Placeholder images from Unsplash
+* Assignment provided by Umuzi Creative Agency
