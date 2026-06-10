@@ -4,73 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with me regarding opportunities, projects, collaborations, or feedback.">
     <title>Contact Me | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
     <header>
         <h1>Contact Me</h1>
-        <nav>
+
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+
         <section>
+
             <h2>Get In Touch</h2>
 
-            <form action="#" method="post">
-                <!-- Name field-->
+            <p>
+                Thank you for visiting my portfolio. If you would like to discuss
+                a project, employment opportunity, collaboration, or simply provide
+                feedback, please complete the form below.
+            </p>
+
+            <form id="contact-form" action="#" method="post">
+
+                <!-- Full Name -->
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required minlength="2" placeholder="Name">
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                    autocomplete="name"
+                    placeholder="Enter your full name">
 
-                <!--Email-->
+                <!-- Email Address -->
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="you@example.com">
-                <!-- Missing: labels, more input types, validation -->
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com">
 
-                <!--phone-->
+                <!-- Phone Number -->
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9+ ]{10,15}" placeholder="12345677890">
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9+ ]{10,15}"
+                    autocomplete="tel"
+                    placeholder="0123456789">
 
-                <!--Subject-->
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
+                <!-- Subject Dropdown -->
+                <label for="subject">Subject</label>
+                <select
+                    id="subject"
+                    name="subject"
+                    required
+                    aria-label="Select a subject">
+
                     <option value="">-- Select an option --</option>
-                    <option value="hire">Hire me</option>
-                    <option value="project">Project inquiry</option>
+                    <option value="hire">Hire Me</option>
+                    <option value="project">Project Inquiry</option>
                     <option value="feedback">Feedback</option>
                 </select>
 
-                <!--Radio buttons-->
-                <span>Preferred contact method:</span>
-                <div class="radio-group">
-                    <input type="radio" id="contact_email" name="contact_method" value="email" checked>
-                    <label for="contact_email">Email</label>
+                <!-- Radio Buttons -->
+                <fieldset>
 
-                    <input type="radio" id="contact_phone" name="contact_method" value="phone">
-                    <label for="contact_phone">Phone</label>
+                    <legend>Preferred Contact Method</legend>
+
+                    <div class="radio-group">
+
+                        <input
+                            type="radio"
+                            id="contact_email"
+                            name="contact_method"
+                            value="email"
+                            checked>
+
+                        <label for="contact_email">Email</label>
+
+                        <input
+                            type="radio"
+                            id="contact_phone"
+                            name="contact_method"
+                            value="phone">
+
+                        <label for="contact_phone">Phone</label>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- Checkbox -->
+                <div class="checkbox-group">
+
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter">
+
+                    <label for="newsletter">
+                        Subscribe to updates and future project announcements
+                    </label>
+
                 </div>
 
-                <!--Message Textarea-->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required minlength="10"
-                    placeholder="Your message here..."></textarea>
+                <!-- Message -->
+                <label for="message">Message</label>
 
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    minlength="10"
+                    aria-describedby="message-help"
+                    placeholder="Enter your message here..."></textarea>
+
+                <small id="message-help">
+                    Please enter at least 10 characters.
+                </small>
+
+                <!-- Submit Button -->
                 <button type="submit">Send Message</button>
+
             </form>
+
         </section>
+
     </main>
 
     <footer>
-        <p>Contact me at <a href="mailto:rembuluwanim.ys@gmail.com">rembuluwanim.ys.@gmail.com</a></p>
+        <p>
+            Contact me at
+            <a href="mailto:rembuluwanim.ys@gmail.com">
+                rembuluwanim.ys@gmail.com
+            </a>
+        </p>
     </footer>
+
 </body>
 
 </html>
